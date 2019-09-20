@@ -21,7 +21,7 @@
       Posted by <a href="#"><%= post.author.username %></a> on <%= post.createdDate.getMonth() + 1 %>/<%= post.createdDate.getDate() %>/<%= post.createdDate.getFullYear() %></p>
 
     <div class="body-content">
-      <%= post.body %>
+      <%- filterUserHTML(post.body) %>
     </div>
 
   </div>
