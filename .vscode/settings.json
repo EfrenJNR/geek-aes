@@ -1,0 +1,6 @@
+{
+    "prettier.trailingComma": "none",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.parameterHints.enabled": false
+}
