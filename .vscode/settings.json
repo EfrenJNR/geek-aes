@@ -2,5 +2,17 @@
     "prettier.trailingComma": "none",
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
-    "editor.parameterHints.enabled": false
+    "editor.parameterHints.enabled": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/.vscode": true
+    },
+    "explorer.sortOrder": "type",
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "smooth"
 }
