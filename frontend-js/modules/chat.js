@@ -65,9 +65,10 @@ export default class Chat {
         <div class="chat-other">
             <a href="/profile/${data.username}"><img class="avatar-tiny" src="${data.avatar}"></a>
             <div class="chat-message"><div class="chat-message-inner">
-            <a href="/profile/${data.username}"><strong>${data.username}:</strong></a>
-            ${data.message}
-            </div></div>
+                <a href="/profile/${data.username}"><strong>${data.username}:</strong></a>
+                ${data.message}
+                </div>
+            </div>
         </div>
     `))
         this.chatLog.scrollTop = this.chatLog.scrollHeight
