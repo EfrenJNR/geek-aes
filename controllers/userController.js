@@ -4,7 +4,7 @@ const Follow = require('../models/Follow')
 const jwt = require('jsonwebtoken')
 // const sendgrid = require('@sendgrid/mail')
 
-sendgrid.setApiKey(process.env.SENDGRIDAPIKEY)
+// sendgrid.setApiKey(process.env.SENDGRIDAPIKEY)
 
 exports.apiGetPostsByUsername = async function (req, res) {
     try {
