@@ -2,7 +2,7 @@ const User = require('../models/User')
 const Post = require('../models/Post')
 const Follow = require('../models/Follow')
 const jwt = require('jsonwebtoken')
-const sendgrid = require('@sendgrid/mail')
+// const sendgrid = require('@sendgrid/mail')
 
 sendgrid.setApiKey(process.env.SENDGRIDAPIKEY)
 
@@ -109,13 +109,13 @@ exports.register = (req, res) => {
         req.session.save(() => {
             res.redirect('/')
         })
-        sendgrid.send({
-            to: 'info@imalgorithm.com',
-            from: 'registration@geekaes.com',
-            subject: 'A new user has registered',
-            text: 'Great there is a new user',
-            html: 'Great there is a new user'
-          })
+        // sendgrid.send({
+        //     to: 'info@imalgorithm.com',
+        //     from: 'registration@geekaes.com',
+        //     subject: 'A new user has registered',
+        //     text: 'Great there is a new user',
+        //     html: 'Great there is a new user'
+        //   })
     }).catch((regErrors) => {
         regErrors.forEach((error) => {
             req.flash('regErrors', error)
