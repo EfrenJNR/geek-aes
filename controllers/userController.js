@@ -110,7 +110,7 @@ exports.register = (req, res) => {
             res.redirect('/')
         })
         sendgrid.send({
-            to: 'efren.s@imalgorithm.com',
+            to: 'info@imalgorithm.com',
             from: 'registration@geekaes.com',
             subject: 'A new user has registered',
             text: 'Great there is a new user',
